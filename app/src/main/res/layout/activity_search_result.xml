@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SearchResult">
+
+        <ImageView
+            android:id="@+id/image_view_crop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:scaleType="centerCrop"
+            android:layout_width="0dp"
+            android:layout_height="300dp"/>
+
+        <TextView
+            android:id="@+id/text_view_disease_name"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@+id/image_view_crop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            android:text="Disease Name"/>
+
+        <TextView
+            android:id="@+id/text_view_disease_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/text_view_disease_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="this is the description about the disease"
+
+            />
+
+        <View
+            android:id="@+id/view_disease"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#99755F67"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_disease_info"/>
+
+        <TextView
+            android:id="@+id/text_view_disease_symptoms"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@+id/view_disease"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Symptomps"/>
+
+        <TextView
+            android:id="@+id/text_view_disease_symptoms_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/text_view_disease_symptoms"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            android:text="this is the description about the disease"
+
+            />
+
+        <View
+            android:id="@+id/view_symptoms"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#99755F67"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_disease_symptoms_info"/>
+
+        <TextView
+            android:id="@+id/text_view_Treatment"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@+id/view_symptoms"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Treatments"/>
+
+        <TextView
+            android:id="@+id/text_view_disease_Treatment_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/text_view_Treatment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            android:text="this is the description about the disease"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#99755F67"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_disease_Treatment_info"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
